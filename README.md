@@ -17,6 +17,8 @@ java TheBirthDayPresentsParty
 
 ## Problem 2
 
+The strategy I used for this problem was to have each of the threads write to a shared memory that could store the top five, bottom five, and interval for each reading. I hashed the readings by combining the temperature and intervals into a single integer. We reversed this when printing the results. Time works differently in this program. A reading is done every second, an interval is calculated every 10 seconds, and the hourly report is done every minute. The hourly report is done by the main thread. The main thread also prints the results of the top five and bottom five temperatures and the interval of the largest and smallest reading.
+
 ### How to run
 
 ```bash
